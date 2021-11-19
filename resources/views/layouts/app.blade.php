@@ -17,6 +17,8 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -40,7 +42,7 @@
                         <a class="navbar-brand" href="{{ url('/admin/lista-rol') }}">
                             Roles
                         </a>
-                        <a class="navbar-brand" href="{{ url('/') }}">
+                        <a class="navbar-brand" href="{{ url('/admin/lista-usuarios') }}">
                             Usuarios
                         </a>
                     </ul>
@@ -86,6 +88,9 @@
             @yield('content')
         </main>
     </div>
+  
+  
+    @yield('js')
 </body>
 
 </html>
